@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URI;
@@ -29,7 +30,10 @@ public class Sorting {
      * @return the sorted array, or null on failure
      */
     static int[] bubbleSort(final int[] array) {
-        return null;
+        Integer[] array1 = Arrays.stream(array).mapToObj(Integer::new).toArray(Integer[]::new);
+        GeorgeSorts.bubbleSort(array1);
+        int[] array2 = Arrays.stream(array).toArray();
+        return array2;
     }
 
     /**
@@ -39,7 +43,10 @@ public class Sorting {
      * @return the sorted array, or null on failure
      */
     static int[] selectionSort(final int[] array) {
-        return null;
+       Integer[] array1 = Arrays.stream(array).mapToObj(Integer::new).toArray(Integer[]::new);
+       GeorgeSorts.selectionSort(array1);
+       int[] array2 = Arrays.stream(array).toArray();
+       return array2;
     }
 
     /**
@@ -49,7 +56,10 @@ public class Sorting {
      * @return the sorted array, or null on failure
      */
     static int[] mergeSort(final int[] array) {
-        return null;
+       Integer[] array1 = Arrays.stream(array).mapToObj(Integer::new).toArray(Integer[]::new);
+       GeorgeSorts.mergeSort(array1);
+       int[] array2 = Arrays.stream(array).toArray();
+       return array2;
     }
 
     /**
